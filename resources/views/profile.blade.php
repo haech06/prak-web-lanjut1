@@ -13,7 +13,7 @@
     <h1> NPM: {{$npm}}</h1>
 
     <p> Deskripsi:</p>
-    <p> {{$deskripsi}} </p>
+    <p> {{$deskrips}} </p>
     
 </body>
 </html>
