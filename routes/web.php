@@ -18,5 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile', [ProfileController::class, 'profile']);
+//Route::get('/profile', [ProfileController::class, 'profile']);
 //Route::get('/profile/{nama}', [ProfileController::class, 'profile']);
+Route::get('/tugas1', function () {
+    return view('tugas1');
+});
+
+Route::get('/upload', [ImageUploadController::class, 'create']);
+Route::post('/upload', [ImageUploadController::class, 'store']);
+
