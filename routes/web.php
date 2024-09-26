@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +28,8 @@ Route::get('/tugas1', function () {
 
 Route::get('/upload', [ImageUploadController::class, 'create']);
 Route::post('/upload', [ImageUploadController::class, 'store']);
+Route::get('/user/create', [UserController::class, 
+'create']); 
+Route::post('/user/store', [UserController::class, 
+'store'])->name('user.store'); 
 

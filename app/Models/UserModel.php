@@ -13,7 +13,7 @@ class UserModel extends Model
     protected $guarded = ['id'];
 
     public function kelas(){
-        return $this->belongto(Kelas::class, 'kelas_id');
+        return $this->belongsTo(Kelas::class, 'kelas_id');
     }
 
     
